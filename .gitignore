@@ -1,0 +1,29 @@
+# Environments
+venv/
+env/
+ENV/
+
+# MLflow tracking & local storage
+mlartifacts/
+mlruns/
+mlflow.db
+
+# Data & Model Files (Managed via DVC)
+*.csv
+*.tsv
+*.json
+*.h5
+*.pkl
+*.pt
+*.onnx
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+
+# IDEs & System files
+.vscode/
+.idea/
+.DS_Store
+
+mlflow.db
