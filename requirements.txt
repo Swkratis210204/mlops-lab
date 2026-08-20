@@ -10,3 +10,4 @@ keras
 tensorflow
 hyperopt
 dvc
+boto3
