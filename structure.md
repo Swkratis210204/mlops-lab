@@ -18,6 +18,13 @@ Production-grade pipelines covering complete machine learning and data engineeri
   * **Stack:** Apache Airflow, PostgreSQL, REST APIs, Astro Cloud, and AWS.
   * **Purpose:** Orchestrates production data extraction via APIs, transformation workflows, and loading into PostgreSQL with deployment on Astro Cloud and AWS infrastructure.
 
+### `DockerImage`
+
+- **Scope:** Containerized application development and CI/CD pipeline.
+- **Stack:** Python, Flask, Docker, Docker Hub, GitHub Actions, and pytest.
+- **Purpose:** Demonstrates the software delivery lifecycle from application development and automated testing to Docker image creation, containerization, and automated publishing through a CI/CD pipeline.
+- **Architecture:** The Flask application is packaged as a Docker image and published to a container registry. GitHub Actions automates testing and image building, providing the foundation for promoting the same application artifact across **DEV → UAT → PROD** environments.
+- **Key Concepts:** Dockerfiles, container images, container portability, automated testing, CI/CD workflows, container registries, artifact promotion, and environment-based deployment.
 ---
 
 ## 2. Tutorials & Proof of Concepts

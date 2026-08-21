@@ -1,29 +1,54 @@
-# Environments
+# =========================
+# Python environments
+# =========================
 venv/
 env/
 ENV/
+.venv/
 
+# =========================
+# Secrets / environment
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Astro / Airflow local files
+# =========================
+**/.astro/
+**/airflow.cfg
+**/airflow.db
+**/airflow-webserver.pid
+**/webserver_config.py
+**/airflow_settings.yaml
+
+# =========================
 # MLflow tracking & local storage
+# =========================
 mlartifacts/
 mlruns/
 mlflow.db
 
-# Data & Model Files (Managed via DVC)
+# =========================
+# Data & Model Files
+# =========================
 *.csv
 *.tsv
-*.json
 *.h5
 *.pkl
 *.pt
 *.onnx
 
+# =========================
 # Python bytecode & cache
+# =========================
 __pycache__/
 *.py[cod]
 
+# =========================
 # IDEs & System files
+# =========================
 .vscode/
 .idea/
 .DS_Store
-
-mlflow.db

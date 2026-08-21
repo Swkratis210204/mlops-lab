@@ -1,0 +1,29 @@
+# Secrets / environment
+.env
+.env.*
+
+# Astro local files
+.astro/
+astro
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Airflow local files
+airflow-webserver.pid
+airflow.cfg
+airflow.db
+webserver_config.py
+
+# Local OS files
+.DS_Store
+
+# Local IDE files
+.vscode/
+.idea/
+
+# Astro generated metadata
+**/.astro/dbt_metadata.json
+**/.astro/manifest.slim.json
