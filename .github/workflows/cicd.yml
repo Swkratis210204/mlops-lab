@@ -13,7 +13,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: DockerImage
+        working-directory: DockersImage
 
     steps:
       - name: Checkout code
@@ -53,7 +53,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: ./DockerImage
-          file: ./DockerImage/Dockerfile
+          context: ./DockersImage
+          file: ./DockersImage/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest
